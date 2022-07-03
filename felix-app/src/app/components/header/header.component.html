@@ -1,0 +1,17 @@
+<header>
+    <div id="header-logo-cta">
+        <button type="button" id="mobile-nav-toggle" (click)="toggleMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    <img id="header-logo" src="assets/images/logo.jpg">
+    <p id="header-cta">
+        Available now!
+        (800) 555-5555
+    </p>
+</div>
+<nav id="nav-main" role="main" [class.close-nav]="mobileNavClosed">
+    <a routerLink="/home" routerLinkActive="active"> Home</a>
+    <a routerLink="/about" routerLinkActive="active"> Who We Are</a>
+    <a routerLink="/contact" routerLinkActive="active"> Contact Us</a>
+</nav>
+</header>
